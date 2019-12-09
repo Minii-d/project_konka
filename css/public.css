@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,dl,dd,fieldset,legend,input,textarea,select,figure{margin:0;padding:0;} 
+body{font:12px  "微软雅黑"; word-wrap:break-word;}
+a,u,s,del{color:#333;text-decoration:none}
+fieldset ,a img,.bor0 {border:0;}
+i,em,b{font-style:normal;font-weight:100;} 
+li{list-style:none;}
+img{vertical-align:middle;} 
+table{border-collapse:collapse;}/* 合并相邻边框 */
+.ind2{text-indent:2em;}
+h1,h2,h3,h4,h5,h6{font-weight: 100;}
+
+
+/* 溢出隐藏显示省略号 */
+.over{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+
+/* 水平垂直居中 */
+.valign{text-align:center;}/* 先水平居中 */
+.valign img{vertical-align:middle;}
+/*.valign i{vertical-align:middle;height:100%;display:inline-block;} 添加一个i标签做参照，设置垂直居中。行内块元素不会自动换行，并且可以设置宽高。*/
+.valign:after{content:"";vertical-align:middle;height:100%;display:inline-block;}/* 将后面的i标签用伪类元素:after代替 */
+
+
+/* 清除浮动 */
+.clear:after{content:"";clear:both;display:block;}/*是在最后一个元素后面增加一个块状元素，属性设置为clear:both，用伪元素:after{content:""}代替最后一个元素，并display:block转换成块状元素*/
+
+/* 解决margin-top向父元素传递 */
+.clear:before{content:"";display:table;}
+
+/* 左右浮动 */
+.l{float: left;}
+.r{float: right;}

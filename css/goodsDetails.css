@@ -1,0 +1,119 @@
+body {
+  color: #333;
+  font-size: 14px;
+}
+
+#main .main-head {
+  line-height: 80px;
+  margin-top: 20px;
+}
+
+#main .main-head span {
+  color: #777;
+}
+
+#main .main-cont .bigger .small-swiper {
+  width: 110px;
+  height: 540px;
+  background: rosybrown;
+}
+
+#main .main-cont .bigger .imgBox {
+  padding: 5px;
+  border: 1px solid #e3e3e3;
+}
+
+#main .main-cont .bigger .imgBox img {
+  width: 529px;
+  height: 529px;
+}
+
+#main .main-cont .main-cont-r {
+  margin-left: 30px;
+}
+
+#main .main-cont .main-cont-r h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+#main .main-cont .main-cont-r p {
+  line-height: 38px;
+}
+
+#main .main-cont .main-cont-r .price b {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ed1c24;
+}
+
+#main .main-cont .main-cont-r .price span {
+  font-size: 14px;
+  color: #b0b0b0;
+  line-height: 18px;
+  text-decoration: line-through;
+}
+
+#main .main-cont .main-cont-r .price a {
+  display: inline-block;
+  text-align: right;
+  margin-left: 140px;
+  position: relative;
+}
+
+#main .main-cont .main-cont-r .price a i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/qrcode.png) center no-repeat;
+  background-size: cover;
+}
+
+#main .main-cont .main-cont-r .price a img {
+  width: 100px;
+  height: 100px;
+  display: none;
+  position: absolute;
+  top: 16px;
+  left: 0;
+}
+
+#main .main-cont .main-cont-r .gifts {
+  width: 445px;
+  height: 73px;
+  background: #f8f8f8;
+  font-size: 12px;
+  margin: 28px 0 40px 0;
+  overflow: hidden;
+}
+
+#main .main-cont .main-cont-r .gifts p {
+  margin: 2px 0 0 20px;
+}
+
+#main .main-cont .main-cont-r .gifts p em {
+  display: inline-block;
+  padding: 0 2px;
+  font-size: 12px;
+  color: #ff6600;
+  line-height: 18px;
+  border: 1px solid  #ff3300;
+  border-radius: 2px;
+}
+
+#main .main-cont .main-cont-r .gifts .timer {
+  margin-left: 30px;
+}
+
+#main .main-cont .main-cont-r .gifts .timer span {
+  display: inline-block;
+  background: #ed1c24;
+  color: #fff;
+  padding: 2px 5px;
+  margin-right: 5px;
+}
+
+#main .main-cont .main-cont-r .address b {
+  font-weight: 700;
+}

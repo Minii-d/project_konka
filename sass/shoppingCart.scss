@@ -1,0 +1,160 @@
+$bg-color:#f7f7f7;  //页面背景颜色
+
+// 设置字体大小，颜色，行高
+@mixin setFont($s,$c,$l){
+    font-size: $s;
+    color: $c;
+    line-height: $l;
+}
+body{
+    color: #333;
+}
+@mixin border($c) {
+    border: 1px solid $c;
+}
+
+#main{
+    .main-container{
+        .title{
+            @include setFont(20px,#333,36px);
+            border-bottom: 1px solid #eee;
+            margin: 45px 0 20px 0;
+            span{
+                @include setFont(14px,#777,36px);
+            }
+        }
+        table{
+            font-size: 14px;
+            color: #333;
+            .checkbox{
+                cursor: pointer;
+            }
+            thead{
+                tr{
+                    background: #efefef;
+                    @include border(#e9e9e9);
+                }
+            }
+            tbody{
+                tr{
+                    border-bottom: 1px solid #e9e9e9;
+                    .details{
+                        overflow: hidden;
+                        .img{
+                            display: inline-block;
+                            float: left;
+                            text-align: center;
+                            img{
+                                padding: 4px;
+                                width: 80px;
+                                height: 80px;
+                                border-radius: 3px;
+                                @include border(#ddd);
+                            }
+                        }
+                        .cont{
+                            float: left;
+                            margin-left: 30px;
+                            h5{
+                                @include setFont(14px,#555,20px);
+                            }
+                            h6{
+                                @include setFont(12px,#000,18px);
+                            }
+                            p{
+                                @include setFont(14px,#333,20px);
+                            }
+                        }
+                    }
+                    .change-number{
+                        .box{
+                            @include border(#ccc);
+                            overflow: hidden;
+                            // width: 133px;
+                            height: 28px;
+                            text-align: center;
+                            display: inline-block;
+                            input{
+                                float: left;
+                                width: 77px;
+                                height: 28px;
+                                text-align: center;
+    
+                            }
+                            b{
+                                float: left;
+                                display: inline-block;
+                                width: 28px;
+                                height: 100%;
+                                @include border(#ccc);
+                                line-height: 28px;
+                                cursor: pointer;
+                            }
+    
+                        }
+                    }
+                    .all-price{
+                        font-weight: 700;
+                    }
+                    .delete{
+                        font-size: 12px;
+                    }
+
+                }
+            }
+            tfoot{
+                @include border(#e9e9e9)
+                .delete-all{
+                    @include setFont(12px,#777,36px);
+                    cursor: pointer;
+                    span:hover{
+                        color: #000;
+                    }  
+                } 
+                .finally{
+                    em{
+                        @include setFont(22px,#ed1c24,30px);
+                        font-weight: 700;
+                    }
+                }
+                .amount{
+                    width: 86px;
+                    height: 44px;
+                    @include setFont(18px,#fff,44px);
+                    background: #ed1c24;
+                    text-align: center;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+
+
+    // 购物车空时
+    .container-none{
+        display: none;
+        height: 304px;
+        background: #eee;
+        padding: 48px 60px;
+        margin-bottom: 30px;
+        .container-none-r{
+            margin: 15px;
+            h3{
+                @include setFont(24px,#333,54px);
+                font-weight: 700;
+            }
+            p{
+                @include setFont(20px,#333,35px);
+                margin-bottom: 15px;
+            }
+            .none-red{
+                display: inline-block;
+                @include setFont(18px,#fff,24px);
+                padding: 10px 16px;
+                background: red;
+                border-radius: 5px;
+            }
+        }
+    }
+
+}

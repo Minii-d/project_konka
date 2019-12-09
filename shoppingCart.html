@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shoppingCart.css">
+</head>
+<body>
+    
+<!-- 顶部 -->
+<section id="top" class="top">
+        <div class="margin">
+            <div class="top-nav">
+                <a href="">康佳新闻</a>
+                <span>|</span>
+                <a href="">加入康佳</a>
+                <span>|</span>
+                <a href="">校园招聘</a>
+                <span>|</span>
+                <a href="">康佳社区</a>
+                <span>|</span>
+                <a href="">大宗采购</a>
+                <span>|</span>
+                <a href="">积分商城</a>
+                <span>|</span>
+            </div>
+            <div class="top-cart">
+                <a href="">
+                    <img src="images/top-header-cart.png" alt="">
+                    购物车(<span class="cart-num">0</span>)
+                    <b></b>
+                </a>                    
+                </div>
+            <div class="top-login">
+                <a href="">登录</a>
+                <span>|</span>
+                <a href="">注册</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 页头 -->
+    <header class="header">
+        <div class="margin">
+            <div class="header-logo">
+                <a href="">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header-nav">
+                <a href="">首页</a>   
+                <a href="">电视</a>   
+                <a href="">冰箱</a>   
+                <a href="">洗衣机</a>   
+                <a href="">生活电器</a>   
+                <a href="">厨卫电器</a>   
+                <a href="">智能硬件</a>   
+                <a href="">K迷优品</a>   
+                <a href="">大宗采购</a>   
+                <a href="">服务</a> 
+            </div>
+            <div class="header-search">
+                <input type="text" placeholder="请输入..." id="search">              
+            </div>
+        </div>       
+    </header>
+
+<!-- 购物车详情 -->
+<div id="main">
+    <div class="margin clear">
+        <!-- 购物车有商品时 -->
+        <div class="main-container">
+            <h3 class="title">购物车<span>Shopping Cart</span></h3>
+            <table>
+                <thead align="left">
+                    <tr>
+                        <th width="110" height="40"><input type="checkbox" name="" id="" class="checkbox">全选</th>
+                        <th width="460">商品</th>
+                        <th width="110">单价</th>
+                        <th width="175">数量</th>
+                        <th width="110">小计</th>
+                        <th width="175">操作</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr height="120">
+                        <td><input type="checkbox" name="" id="" class="checkbox"></td>
+                        <td class="details" >
+                            <a href="" class="img">
+                                <img src="images/tv-picture1.jpg">
+                            </a>
+                            <div class="cont">
+                                <h5><a href="">智能性价比之王套餐 4K电视+法式冰箱B50U</a></h5>
+                                <h6>XQG80-1203BD</h6>
+                                <p>2GB+16GB大内存  免遥控全景AI  远场语音智能</p>
+                                <!-- <p class="gif"><img src="images/e5ff5a2445ad24dcb185e4abcdad7f362a3adc19.jpg" alt="">【赠品】抽奖赢最高价值5000春节机票飞机票 x 1</p>  -->
+                            </div>
+                        </td>
+                        <td class="unit-price">2799.00</td>
+                        <td class="change-number">
+                            <div class="box">
+                                <b>-</b>
+                                <input type="number" id="" value="1">
+                                <b>+</b>
+                            </div>
+                        </td>
+                        <td class="all-price">2799.00</td>
+                        <td class="delete">删除</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr height="74">
+                        <td><input type="checkbox" name="" id="" class="checkbox">全选</td>
+                        <td colspan="2" class="delete-all"><span>删除选中</span></td>
+                        <td colspan="2" class="finally">
+                            <p>已选择<span>1</span>件商品,优惠后金额&nbsp;:&nbsp;<em>2799.00</em></p>                           
+                        </td>
+                        <td><div class="amount">去结算</div></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        
+        <!-- 购物车为空时 -->
+        <div class="container-none clear">
+            <image src="images/shoppingNone.png" class="l"></image>
+            <div class="container-none-r l">
+                <h3>您的购物车还是空的！</h3>
+                <p>您的购物车当前并未选购任何商品。</p>
+                <a class="none-red" href="">马上去购物 »</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+    
+    <!-- 页面接近底部的指南部分 -->
+    <section id="guild">
+        <div class="margin">
+            <div class="guild-t">
+                <ul class="clear">
+                    <li>
+                        <img src="images/guild-1.png">
+                        <div class="cont">
+                            <h4>全场包邮</h4>
+                            <p>全场商品免费送到家</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/guild-2.png">
+                        <div class="cont">
+                            <h4>质量保证</h4>
+                            <p>享受国家三包政策</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/guild-3.png">
+                        <div class="cont">
+                            <h4>权益保障</h4>
+                            <p>7天包退15天包换</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/guild-4.png">
+                        <div class="cont">
+                            <h4>放心服务</h4>
+                            <p>24小时内上门服务</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/guild-5.png">
+                        <div class="cont">
+                            <h4>意外惊喜</h4>
+                            <p>限时打折优惠不断</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="guild-b clear">
+                <div class="guild-b-help l">
+                    <dl>
+                        <dt>帮助中心</dt>
+                        <dd><a href="" target="_blank">购买指南</a></dd>
+                        <dd><a href="" target="_blank">支付方式</a></dd>
+                        <dd><a href="" target="_blank">配送方式</a></dd>
+                        <dd><a href="" target="_blank">售后政策</a></dd>
+                        <dd><a href="" target="_blank">防伪查询</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>新闻中心</dt>
+                        <dd><a href="" target="_blank">集团新闻</a></dd>
+                        <dd><a href="" target="_blank">媒体报道</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>投资者关</dt>
+                        <dd><a href="" target="_blank">公司概要</a></dd>
+                        <dd><a href="" target="_blank">高管团队</a></dd>
+                        <dd><a href="" target="_blank">最新公告</a></dd>
+                        <dd><a href="" target="_blank">公司治理</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>集团成员网站</dt>
+                        <dd><a href="" target="_blank">华侨城集团</a></dd>
+                        <dd><a href="" target="_blank">华侨城集团</a></dd>
+                        <dd><a href="" target="_blank">康佳全球服务中心</a></dd>
+                        <dd><a href="" target="_blank">康佳全球服务中心</a></dd>
+                        <dd><a href="" target="_blank">康佳全球服务中心</a></dd>
+                        <dd><a href="" target="_blank">康佳移动互联科技</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="" target="_blank">了解康佳</a></dd>
+                        <dd><a href="" target="_blank">了解康佳</a></dd>
+                        <dd><a href="" target="_blank">加入康佳</a></dd>
+                        <dd><a href="" target="_blank">加入康佳</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>关注我们</dt>
+                        <dd><a href="" target="_blank">官方微博</a></dd>
+                        <dd><a href="" target="_blank">官方微信</a></dd>
+                        <dd><a href="" target="_blank">官方社区</a></dd>
+                        <dd><a href="" target="_blank">官方社区</a></dd>
+                        <dd><a href="" target="_blank">K迷俱乐部</a></dd>
+                        <dd><a href="" target="_blank">官方服务</a></dd>
+                        <dd><a href="" target="_blank">官方服务</a></dd>
+                    </dl>
+                </div>
+                <div class="guild-b-tel r">
+                    <h4>24小时全国服务热线</h4>
+                    <p>400-880-0016</p>
+                    <div class="guild-b-server">
+                        <a href="" target="_blank" class="zixun">购买咨询</a>
+                        <a href="" target="_blank" class="fuwu">售后服务</a>
+                    </div>
+                </div>   
+    
+            </div>   
+        </div> 
+    </section>
+    
+    <!-- 页脚 -->
+    <footer>
+        <div class="margin">
+            <div class="footer-logo l">
+                <img src="images/konka.png" alt="">
+            </div>
+            <div class="footer-cont r">
+                Copyright © 1980-2019 康佳集团股份有限公司 版权所有 
+                    <span>|</span>
+                    <a href="">联系我们</a>
+                    <span>|</span>
+                    <a href="">法律声明</a>
+                    <span>|</span>
+                    <a href="">隐私保护</a>
+                    <span>|</span>
+                    <a href="">快递查询</a>
+                    <span>|</span>
+                    <a href="">腾讯视频TV端</a>
+                    <span>|</span>
+                    <a href="">粤ICP备 05059413</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 底部 -->
+    <section id="bottom">
+        <img src="images/bottom-cert3.png">
+        <img src="images/bottom-cert2.png">
+        <img src="images/bottom-cert.gif">
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,263 @@
+body {
+  font-family: Microsoft Yahei;
+  font-size: 12px;
+}
+
+.margin {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+#top {
+  height: 40px;
+  background: #333;
+}
+
+#top .margin {
+  overflow: hidden;
+}
+
+#top .margin .top-nav {
+  float: left;
+}
+
+#top .margin .top-nav a {
+  color: #b0b0b0;
+  line-height: 40px;
+}
+
+#top .margin .top-nav span {
+  color: #424242;
+  margin: 5px;
+}
+
+#top .margin .top-login {
+  float: right;
+}
+
+#top .margin .top-login a {
+  color: #b0b0b0;
+  line-height: 40px;
+}
+
+#top .margin .top-login span {
+  color: #424242;
+  margin: 5px;
+}
+
+#top .margin .top-cart {
+  float: right;
+  width: 113px;
+  height: 40px;
+  background: #424242;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#top .margin .top-cart a {
+  color: #b0b0b0;
+  line-height: 40px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+#top .margin .top-cart a img {
+  width: 20px;
+  height: 20px;
+  vertical-align: text-top;
+}
+
+#top .margin .top-cart a b {
+  display: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  right: -10px;
+  background: #f00;
+  text-align: center;
+}
+
+header .margin {
+  height: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+header .margin .header-logo {
+  float: left;
+  height: 50px;
+  margin: 0 24px;
+  line-height: 50px;
+}
+
+header .margin .header-logo a {
+  display: block;
+}
+
+header .margin .header-nav {
+  float: left;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+}
+
+header .margin .header-nav a {
+  display: inline-block;
+  width: 70px;
+  height: 50px;
+  color: #767676;
+}
+
+header .margin .header-nav a:hover {
+  color: #f71d26;
+}
+
+header .margin .header-search {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+}
+
+header .margin .header-search #search {
+  width: 200px;
+  height: 26px;
+  text-indent: 2em;
+  margin-right: 30px;
+  border: 0;
+  outline: none;
+  background: #fff url(../images/header-search.png) no-repeat 2px;
+}
+
+#guild {
+  background: #fff;
+}
+
+#guild .margin .guild-t {
+  height: 114px;
+  border-bottom: 1px solid #eaeaea;
+  color: #b2b2b2;
+  overflow: hidden;
+}
+
+#guild .margin .guild-t ul {
+  margin: 45px 0 0 58px;
+  overflow: hidden;
+}
+
+#guild .margin .guild-t ul li {
+  float: left;
+  width: 215px;
+}
+
+#guild .margin .guild-t ul li img {
+  display: block;
+  float: left;
+  margin: 8px 14px 0 0;
+}
+
+#guild .margin .guild-t ul li .cont {
+  float: left;
+}
+
+#guild .margin .guild-t ul li .cont h4 {
+  font: 18px/28px "";
+}
+
+#guild .margin .guild-t ul li .cont p {
+  line-height: 22px;
+}
+
+#guild .margin .guild-b {
+  height: 420px;
+}
+
+#guild .margin .guild-b .guild-b-help {
+  overflow: hidden;
+}
+
+#guild .margin .guild-b .guild-b-help dl {
+  float: left;
+  line-height: 35px;
+  margin: 52px 84px 0 0;
+}
+
+#guild .margin .guild-b .guild-b-help dl dt {
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+}
+
+#guild .margin .guild-b .guild-b-help dl dd {
+  height: 35px;
+}
+
+#guild .margin .guild-b .guild-b-help dl dd a {
+  color: #767676;
+}
+
+#guild .margin .guild-b .guild-b-help dl dd a:hover {
+  color: #f71d26;
+}
+
+#guild .margin .guild-b .guild-b-tel {
+  width: 249px;
+  height: 124px;
+  border-left: 1px solid #eaeaea;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#guild .margin .guild-b .guild-b-tel h4 {
+  font: 700 12px/20px "";
+  color: #6f6c71;
+}
+
+#guild .margin .guild-b .guild-b-tel p {
+  font: 24px/54px "";
+  color: #ff5d59;
+}
+
+#guild .margin .guild-b .guild-b-tel .guild-b-server a {
+  display: inline-block;
+  border: 1px solid #ff5d59;
+  color: #ff5d59;
+  padding: 5px 10px;
+}
+
+#guild .margin .guild-b .guild-b-tel .guild-b-server .zixun {
+  margin-right: 5px;
+}
+
+footer {
+  height: 100px;
+  background: #333;
+  text-align: center;
+  line-height: 100px;
+  color: #666;
+}
+
+footer .margin {
+  box-sizing: border-box;
+  padding: 0 40px;
+}
+
+footer .margin .footer-logo {
+  width: 155px;
+  height: 100px;
+}
+
+footer .margin .footer-cont a {
+  color: #666;
+}
+
+footer .margin .footer-cont a:hover {
+  color: #fff;
+}
+
+#bottom {
+  text-align: center;
+  padding: 10px 0;
+}
