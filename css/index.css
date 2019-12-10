@@ -18,15 +18,16 @@ header .margin .header-nav a:hover {
 }
 
 #banner .swiper {
+  width: 1920px;
+  overflow: hidden;
   height: 500px;
-}
-
-#banner .swiper .imgBox {
-  position: relative;
 }
 
 #banner .swiper .imgBox a {
   position: absolute;
+  display: block;
+  width: 1920px;
+  height: 500px;
   top: 0;
   left: -250px;
 }
@@ -45,6 +46,7 @@ header .margin .header-nav a:hover {
   font-weight: 700;
   font-family: "黑体";
   text-shadow: 0 0 10px #fff;
+  cursor: pointer;
 }
 
 #banner .swiper .btns .left {
@@ -495,6 +497,7 @@ main .product-icebox ul .red {
 #sidebar ul li {
   width: 40px;
   height: 45px;
+  margin-left: 2px;
   background: #888;
   text-align: center;
   border-top: 1px solid #fff;
@@ -504,10 +507,18 @@ main .product-icebox ul .red {
   cursor: pointer;
 }
 
+#sidebar ul li:hover {
+  background: #f71d26;
+}
+
 #sidebar ul li span {
   display: inline-block;
   width: 24px;
   line-height: 21px;
+}
+
+#sidebar .first {
+  border-top: 0;
 }
 
 #sidebar .te {

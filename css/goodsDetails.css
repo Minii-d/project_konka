@@ -15,17 +15,38 @@ body {
 #main .main-cont .bigger .small-swiper {
   width: 110px;
   height: 540px;
-  background: rosybrown;
+  box-sizing: border-box;
+  padding: 30px 0;
 }
 
-#main .main-cont .bigger .imgBox {
-  padding: 5px;
+#main .main-cont .bigger .small-swiper i {
+  display: block;
+  width: 100%;
+  height: 14px;
+}
+
+#main .main-cont .bigger .small-swiper .up {
+  background: url(../images/icon-up3.png) no-repeat center;
+  margin-bottom: 20px;
+}
+
+#main .main-cont .bigger .small-swiper .down {
+  background: url(../images/icon-down.png) no-repeat center;
+  margin-top: 20px;
+}
+
+#main .main-cont .bigger .small-swiper ul li {
   border: 1px solid #e3e3e3;
+  margin: 10px 0;
+  text-align: center;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
 }
 
-#main .main-cont .bigger .imgBox img {
-  width: 529px;
-  height: 529px;
+#main .main-cont .bigger .small-swiper ul li img {
+  width: 70px;
+  height: 70px;
 }
 
 #main .main-cont .main-cont-r {
@@ -180,4 +201,9 @@ body {
 
 #main .main-cont .main-cont-r .bottons #btn-add {
   background: #ff9f00;
+}
+
+#main .main-details {
+  border: 1px solid #ddd;
+  background: lightblue;
 }

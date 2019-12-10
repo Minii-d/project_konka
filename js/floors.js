@@ -9,20 +9,15 @@
         })
     })
 
-    // 二级菜单
-    class Menus{
-        constructor(){
-            var oul = document.querySelector(".ul1");
-            var ali1 = document.querySelectorAll(".menus .li1");
-            var asubMenu = document.querySelectorAll(".li1 .sub-menu");
-            // console.log(oul);
-            
-            
+    
+    onscroll = ()=>{
+        if($("html").scrollTop()>300){
+            $("#sidebar").fadeIn(500);
+        }
+        if($("html").scrollTop()<300){
+            $("#sidebar").fadeOut(500);
         }
     }
-
-    new Menus;
-
-
+    
 
 })();

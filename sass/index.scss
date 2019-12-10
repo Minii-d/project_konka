@@ -86,12 +86,16 @@ header .margin{
     
     // 轮播
     .swiper{
-        // width: 1920px;
+        width: 1920px;
+        overflow: hidden;
         height: 500px;
         .imgBox{
-            position: relative;;
+            // position: relative;;
             a{
                 position: absolute;
+                display: block;
+                width: 1920px;
+                height: 500px;
                 top: 0;
                 left: -250px;
             }
@@ -110,6 +114,7 @@ header .margin{
                 font-weight: 700;
                 font-family: "黑体";
                 text-shadow: 0 0 10px #fff;
+                cursor: pointer;
             }
             .left{
                 left: 0;
@@ -351,7 +356,7 @@ main{
     ul li{        
         width: 40px;
         height: 45px;
-        // line-height: 45px;
+        margin-left: 2px;
         background: #888;
         text-align: center;
         border-top: 1px solid #fff;
@@ -359,11 +364,17 @@ main{
         box-sizing: border-box;
         vertical-align: middle;
         cursor: pointer;
+        &:hover{
+            background: #f71d26;
+        }
         span{
             display: inline-block;
             width: 24px;
             line-height: 21px;
         }
+    }
+    .first{
+        border-top: 0;
     }
     .te{
         line-height: 45px;
