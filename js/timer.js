@@ -34,7 +34,6 @@
                         <span>${this.minutes}分</span>
                         <span>${this.seconds}秒 后结束</span>       
                     </s>`;
-                    console.log(this.timer)
             this.timer.innerHTML = str;
         }
     }
@@ -42,7 +41,7 @@
     clearInterval(t);
     var t = setInterval(()=>{
         new Timer({
-            date1:"2019/12/10 11:48:59"            
+            date1:"2019/12/12 11:59:59"            
         });
     },1000);
 

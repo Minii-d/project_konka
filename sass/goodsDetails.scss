@@ -59,52 +59,54 @@ body{
                         height: 70px;
                     }
                 }
-            // }
-            // .imgBox{
+            }
+            // 放大镜样式
+            .imgBox{
 
-            //         width: 538px;
-            //         height: 538px;
-            //         padding: 5px;
-            //         overflow: hidden;
-            //         @include border(#e3e3e3);
-            //         // img{
-            //             // width: 529px;
-            //             // height: 529px;
-            //         // }
-            //         .sBox{
-            //             width: 529px;
-            //             height: 529px;
-            //             position: absolute;
-            //             // left: 50px;
-            //             // top: 100px;
+                    width: 538px;
+                    height: 538px;
+                    padding: 5px;
+                    overflow: hidden;
+                    @include border(#e3e3e3);
+                    // img{
+                        // width: 529px;
+                        // height: 529px;
+                    // }
+                    .sBox{
+                        width: 529px;
+                        height: 529px;
+                        position: absolute;
+                        // left: 50px;
+                        // top: 100px;
                         
-            //             img{
-            //                 width: 529px;
-            //                 height: 529px; 
-            //             }
-            //             span{
-            //                 background: rgba(200,200,200,0.6);
-            //                 position: absolute;
-            //                 left:0;
-            //                 top:0;
-            //                 display: none; 
-            //             }
-            //         }
-            //         // .bBox{
-            //         //     width: 529px;
-            //         //     height: 529px; 
-            //         //     position: absolute;
-            //         //     left: 500px;
-            //         //     top:100px;
-            //         //     overflow: hidden;
-            //         //     display: none;
-            //         //     img{
-            //         //         width: 940px;
-            //         //         height: 920px;
-            //         //         position: absolute;
-            //         //     }
-            //         }
+                        img{
+                            width: 529px;
+                            height: 529px; 
+                        }
+                        span{
+                            background: rgba(200,200,200,0.6);
+                            position: absolute;
+                            left:0;
+                            top:0;
+                            display: none; 
+                        }
+                    }
+                    .bBox{
+                        width: 529px;
+                        height: 529px; 
+                        position: absolute;
+                        left: 500px;
+                        top:100px;
+                        overflow: hidden;
+                        display: none;
+                        img{
+                            width: 940px;
+                            height: 920px;
+                            position: absolute;
+                        }
+                    }
             } 
+            
         }
         .main-cont-r{
             margin-left: 30px;
@@ -243,7 +245,34 @@ body{
     }
     .main-details{
         @include border(#ddd);
-        background: lightblue;
+        margin-top: 60px;
+        .details-panel{
+            height: 41px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            a{
+                display: inline-block;
+                width: 132px;
+                height: 40px;
+                line-height: 40px;
+                color: #777;
+                &:hover{
+                    color: #000;
+                    cursor: pointer;
+                }
+            }
+            .active{
+                border-bottom: 2px solid #ed1c24;
+                color: #333;
+            }            
+        }
+        .details-cont{
+            text-align: center;
+            padding: 15px;
+            img{
+                width: 1078px;
+            }
+        }
  
         
             

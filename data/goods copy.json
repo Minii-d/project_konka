@@ -1,0 +1,21 @@
+[{
+    "img":"http://gw.alicdn.com/bao/upload/TB1S.X9kbY1gK0jSZTEXXXDQVXa.jpg_Q75.jpg",
+    "name":"note 5",
+    "price":"￥1699",
+    "goodsId":1
+},{
+    "img":"http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ca9b4f81af709935556bef9aa21a90e8.jpg?thumb=1&w=200&h=200&f=webp&q=90",
+    "name":"Redmi note 5",
+    "price":"￥1699",
+    "goodsId":2
+},{
+    "img":"http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d295c4fb500d163a7045dc715b47f808.jpg?thumb=1&w=200&h=200&f=webp&q=90",
+    "name":"小米 Pro 5G",
+    "price":"￥3699",
+    "goodsId":3
+},{
+    "img":"http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4c87947d104ee5833913e4c520108f16.jpg?thumb=1&w=200&h=200&f=webp&q=90",
+    "name":"Redmi note 8",
+    "price":"￥13699",
+    "goodsId":4
+}]
