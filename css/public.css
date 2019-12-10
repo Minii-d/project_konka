@@ -12,6 +12,7 @@ img{vertical-align:middle;}
 table{border-collapse:collapse;}/* 合并相邻边框 */
 .ind2{text-indent:2em;}
 h1,h2,h3,h4,h5,h6{font-weight: 100;}
+input{outline: none;}
 
 
 /* 溢出隐藏显示省略号 */

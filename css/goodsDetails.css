@@ -114,6 +114,70 @@ body {
   margin-right: 5px;
 }
 
-#main .main-cont .main-cont-r .address b {
+#main .main-cont .main-cont-r .address span {
+  padding: 0 5px;
+}
+
+#main .main-cont .main-cont-r .address .store {
+  margin: 0 10px;
+}
+
+#main .main-cont .main-cont-r .address .store span {
   font-weight: 700;
+}
+
+#main .main-cont .main-cont-r .changeNum {
+  margin-top: 55px;
+  font-weight: 700;
+  height: 25px;
+}
+
+#main .main-cont .main-cont-r .changeNum .box {
+  text-align: center;
+  margin-left: 15px;
+  border: 1px solid #ddd;
+}
+
+#main .main-cont .main-cont-r .changeNum .box span {
+  line-height: 25px;
+}
+
+#main .main-cont .main-cont-r .changeNum .box i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+#main .main-cont .main-cont-r .changeNum .box input {
+  text-align: center;
+  width: 70px;
+  height: 25px;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 1px solid #ddd;
+}
+
+#main .main-cont .main-cont-r .bottons {
+  margin-top: 46px;
+}
+
+#main .main-cont .main-cont-r .bottons input {
+  float: left;
+  width: 190px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+}
+
+#main .main-cont .main-cont-r .bottons #btn-buy {
+  background: #ed1c24;
+  margin-right: 24px;
+}
+
+#main .main-cont .main-cont-r .bottons #btn-add {
+  background: #ff9f00;
 }
