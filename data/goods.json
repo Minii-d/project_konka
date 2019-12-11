@@ -5,6 +5,7 @@
     "price":"￥2999.00",
     "oprice":"￥4300.00",
     "tag":"tv",
+    "oneimg":"images/tv1.jpg",
     "img":[
         "images/tv1.jpg",
         "images/tv-1-mini.jpg",
@@ -33,6 +34,7 @@
     "price":"￥3599.00",
     "oprice":"￥5000.00",
     "tag":"tv",
+    "oneimg":"images/tv2.jpg",
     "img":[
         "images/tv2.jpg",
         "images/tv-1-mini.jpg",
@@ -61,6 +63,7 @@
     "price":"￥2226.00",
     "oprice":"￥4322.00",
     "tag":"tv",
+    "oneimg":"images/tv3.jpg",
     "img":[
         "images/tv3.jpg",
         "images/tv-1-mini.jpg",
@@ -89,6 +92,7 @@
     "price":"￥2226.00",
     "oprice":"￥4322.00",
     "tag":"tv",
+    "oneimg":"images/tv4.jpg",
     "img":[
         "images/tv4.jpg",
         "images/tv-1-mini.jpg",
@@ -116,7 +120,8 @@
     "description":"金色钢化玻璃面板，冷冻室6个独立存储抽屉",
     "price":"￥2899.00",
     "oprice":"￥4322.00",
-    "tag":"tv",
+    "tag":"icebox",
+    "oneimg":"images/icebox1.jpg",
     "img":[
         "images/icebox1.jpg",
         "images/icebox-min1.jpg",
@@ -144,7 +149,8 @@
     "description":"金色钢化玻璃面板",
     "price":"￥2226.00",
     "oprice":"￥4322.00",
-    "tag":"tv",
+    "tag":"icebox",
+    "oneimg":"images/icebox2.jpg",
     "img":[
         "images/icebox2.jpg",
         "images/icebox-min1.jpg",
@@ -172,7 +178,8 @@
     "description":"杜比数码环绕 双HDR画质补偿",
     "price":"￥2226.00",
     "oprice":"￥4322.00",
-    "tag":"tv",
+    "tag":"icebox",
+    "oneimg":"images/icebox3.jpg",
     "img":[
         "images/icebox3.jpg",
         "images/icebox-min1.jpg",
@@ -200,7 +207,8 @@
     "description":"杜比数码环绕 双HDR画质补偿",
     "price":"￥2226.00",
     "oprice":"￥4322.00",
-    "tag":"tv",
+    "tag":"icebox",
+    "oneimg":"images/icebox4.jpg",
     "img":[
         "images/icebox4.jpg",
         "images/icebox-min1.jpg",

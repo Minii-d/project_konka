@@ -2,6 +2,10 @@ a {
   color: #333;
 }
 
+body{
+  background: #f7f7f7;
+}
+
 #classify-nav {
   margin: 50px 0 19px;
   overflow: hidden;
@@ -152,12 +156,16 @@ a {
 #main .goods-list ul li {
   float: left;
   width: 270px;
-  height: 340px;
+  /* height: 340px; */
   background: #fff;
   box-sizing: border-box;
   margin: 0 20px 20px 0;
   padding: 10px;
   text-align: center;
+  position: relative;
+}
+#main .goods-list ul li:hover{
+  box-shadow: 0 0 10px #aaa;
 }
 
 #main .goods-list ul li a {
@@ -191,3 +199,19 @@ a {
 #main .goods-list ul li a p {
   color: #da2a2a;
 }
+
+#main .goods-list ul li a em{
+  display: inline-block;
+  padding: 5px 10px;
+  background: #f71d26;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 10px;
+  /* position: absolute; */
+  right: 92px;
+  bottom: 20px;
+  cursor: pointer;
+  /* display: none; */
+}
+

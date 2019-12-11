@@ -1,12 +1,7 @@
 ;(function(){
     "use strict";
 
-
-
-
-
-
-
+// 渲染页面
     class IndexGoods{
         constructor(){
             //商品数据接口
@@ -25,7 +20,6 @@
                 that.res = JSON.parse(res);
                 // that.display();
                 that.displayTv();               
-                that.displayIcebox();               
 
             });
         }
@@ -34,57 +28,92 @@
             let goodsArr = [];
             var arr1 = [];
             var arr2 = [];
-            for(var j=0;j<this.res.length;j++){
-                if(this.res[j].tag=="tv"){
-                    arr1.push(this.res[j]);
-                    goodsArr = arr1;
-                }
-            }
-            console.log(goodsArr)
             var str = "";
-            for(let i=0;i<goodsArr.length;i++){
+            for(var i=0;i<this.res.length;i++){
+                // if("tv" == this.res[j].tag){
+                //     console.log(this.res[j].tag)
+                //     arr1.push(this.res[j]);
+                //     goodsArr = arr1;
+                // }
+                // console.log(this.res[i].oneimg)
                 str += `<li>
-                <a href="">
-                <img src="${this.res[i].img}" title="${this.res[i].name}">
-                <h4>${this.res[i].name}</h4>
-                <h5>${this.res[i].description}</h5>
-                <p>${this.res[i].price}&nbsp;<span>&nbsp;${this.res[i].oprice}</span></p>
-                </a>
-                </li>`;
+                            <a href="">
+                            <img src="${this.res[i].oneimg}" title="${this.res[i].name}">
+                            <h4>${this.res[i].name}</h4>
+                            <h5>${this.res[i].description}</h5>
+                            <p>${this.res[i].price}&nbsp;<span>&nbsp;${this.res[i].oprice}</span></p>
+                            </a>
+                        </li>`;    
             }
-                this.tvGoods.innerHTML = str;
-        }
 
-        displayIcebox(){
-            var type;
-            let goodsArr = [];
-            var arr1 = [];
-            var arr2 = [];
-            for(var j=0;j<this.res.length;j++){
-                if(this.res[j].tag=="icebox"){
-                    arr2.push(this.res[j]);
-                    goodsArr = arr2; 
-                }
-            }
-            console.log(goodsArr)
-            var str = "";
-            for(let i=0;i<goodsArr.length;i++){
-                str += `<li>
-                <a href="">
-                <img src="${this.res[i].img}" title="${this.res[i].name}">
-                <h4>${this.res[i].name}</h4>
-                <h5>${this.res[i].description}</h5>
-                <p>${this.res[i].price}&nbsp;<span>&nbsp;${this.res[i].oprice}</span></p>
-                </a>
-                </li>`;
-            }
-            this.iceboxGoods.innerHTML = str; 
-        }
+            this.tvGoods.innerHTML = str;
+            this.iceboxGoods.innerHTML = str;
+        }  
+
     }
 
-
-
     new IndexGoods();
+
+
+// 搜索
+    class Search{
+        constructor(){
+            this.url = "http://localhost/project_konka/data/goods.json";
+            this.txt = document.querySelector(".header-search #search");
+            this.list = document.querySelector(".header-search .list");
+            this.sbtn = document.querySelector(".header-search .s-btn");
+            this.addEvent();
+        }
+        addEvent(){
+            // this.txt.oninput = ()=>{
+            //     this.val = this.txt.value;
+            //     // this.load();
+            //     this.setCookie();
+            // }
+
+            this.txt.onclick = (eve) =>{
+                this.list.style.display = "block";
+                let e = eve || window.event;
+                e.stopPropagation();
+            }  
+
+            document.onclick = (eve) =>{
+                this.list.style.display = "none";
+            } 
+
+            this.sbtn.onclick = ()=>{
+                // console.log(this);
+                this.val = this.txt.value;
+                this.setCookie();
+                location.href = "goodsList.html";
+            }     
+        }
+        setCookie(){
+            setCookie("goodsSear",JSON.stringify(this.val));
+        }
+
+        // load(){
+        //     var that = this;
+        //     ajaxGet(this.url,function(res){
+        //         that.res = res;                
+        //         // console.log(that.res);
+        //     });
+            
+        //     this.getMsg();
+        // }
+        // getMsg(){
+        //     console.log(this.res)
+        //     for(let i=0;i<this.res.length;i++){
+        //         console.log(this.res[i].name)
+        //     }
+            // this.res.includes(this.val);
+            
+        // }
+  
+
+    }
+
+    new Search();
 
 
 
