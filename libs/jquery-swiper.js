@@ -11,7 +11,7 @@
 			index:options.index || 0,
 			autoPlay:options.autoPlay===false ? false : true,
 			delayTime:options.delayTime || 2000,
-			moveTime:options.moveTime || 1000,
+			moveTime:options.moveTime || 2000,
 //			假设上一张是最后一个索引
 			iPrev:options.items.length-1
 		};

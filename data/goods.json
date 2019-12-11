@@ -1,33 +1,96 @@
 [{
     "goodsId":1,
-    "img":"https://www.konka.com/public/images/07/62/de/2d55432e253f91f68b3a800d3b1b92d6db6ab8a3.jpg?32967_OW800_OH800",
+    "img":"images/tv1.jpg",
     "name":"LED70U5 70吋巨屏4K超高清电视",
     "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00"
+    "price":"￥3599.00",
+    "oprice":"￥5000.00",
+    "tag":"tv"
 },{
     "goodsId":2,
-    "img":"https://www.konka.com/public/images/52/68/57/2b7d62b38e9fb79a605a0657154a1b36ff6f8990.jpg?66040_OW800_OH800",
+    "img":"images/tv2.jpg",
     "name":"LED70U5 70吋巨屏4K超高清电视",
     "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00"
-    },{
+    "price":"￥2000.00",
+    "oprice":"￥5000.00",
+    "tag":"tv"
+},{
     "goodsId":3,
-    "img":"https://www.konka.com/public/images/d6/9f/22/5271192884e8aa0208ab9513cad859b93773b280.jpg?66055_OW800_OH800",
+    "img":"images/tv3.jpg",
     "name":"LED70U5 70吋巨屏4K超高清电视",
     "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00"
-    },{
+    "price":"￥3599.00","oprice":"￥5000.00",
+    "tag":"tv"
+},{
     "goodsId":4,
-    "img":"https://www.konka.com/public/images/2e/6c/8e/10338bebbdab7003a72e979eee92458c32198750.jpg?66225_OW800_OH800",
+    "img":"images/tv4.jpg",
     "name":"LED70U5 70吋巨屏4K超高清电视",
     "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00"
-    },{
+    "price":"￥3599.00",
+    "oprice":"￥5000.00",
+    "tag":"tv"
+},{
     "goodsId":5,
-    "img":"https://www.konka.com/public/images/2e/6c/8e/10338bebbdab7003a72e979eee92458c32198750.jpg?66225_OW800_OH800",
+    "img":"images/icebox1.jpg",
     "name":"LED70U5 70吋巨屏4K超高清电视",
     "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00"
-    }
-
-]
+    "price":"￥3599.00",
+    "oprice":"￥5000.00",
+    "tag":"icebox"
+},{
+    "goodsId":6,
+    "img":"images/icebox2.jpg",
+    "name":"LED70U5 70吋巨屏4K超高清电视",
+    "description":"杜比数码环绕 双HDR画质补偿",
+    "price":"￥3599.00",
+    "oprice":"￥5000.00",
+    "tag":"icebox"
+},{
+    "goodsId":7,
+    "img":"images//icebox3.jpg",
+    "name":"LED70U5 70吋巨屏4K超高清电视",
+    "description":"杜比数码环绕 双HDR画质补偿",
+    "price":"￥3599.00",
+    "oprice":"￥5000.00",
+    "tag":"icebox"
+},{
+    "goodsId":8,
+    "img":"images/icebox4.jpg",
+    "name":"LED70U5 70吋巨屏4K超高清电视",
+    "description":"杜比数码环绕 双HDR画质补偿",
+    "price":"￥3599.00",
+    "oprice":"￥5000.00",
+    "tag":"icebox"
+},{
+    "goodsId":9,
+    "img":"images/clearbox1.jpg",
+    "name":"LED70U5 70吋巨屏4K超高清电视",
+    "description":"杜比数码环绕 双HDR画质补偿",
+    "price":"￥3599.00",
+    "oprice":"￥5000.00",
+    "tag":"clearbox"
+},{
+    "goodsId":10,
+    "img":"images/clearbox2.jpg",
+    "name":"LED70U5 70吋巨屏4K超高清电视",
+    "description":"杜比数码环绕 双HDR画质补偿",
+    "price":"￥3599.00",
+    "oprice":"￥5000.00",
+    "tag":"clearbox"
+},{
+    "goodsId":10,
+    "img":"images/clearbox3.jpg",
+    "name":"LED70U5 70吋巨屏4K超高清电视",
+    "description":"杜比数码环绕 双HDR画质补偿",
+    "price":"￥3599.00",
+    "oprice":"￥5000.00",
+    "tag":"clearbox"
+},{
+    "goodsId":10,
+    "img":"images//clearbox4.jpg",
+    "name":"LED70U5 70吋巨屏4K超高清电视",
+    "description":"杜比数码环绕 双HDR画质补偿",
+    "price":"￥3599.00",
+    "oprice":"￥5000.00",
+    "tag":"clearbox"
+}]

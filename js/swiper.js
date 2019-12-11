@@ -1,5 +1,5 @@
 ;(function(){
-    "use strict";
+    // "use strict";
 
     
     $(".swiper").banner({
@@ -9,8 +9,8 @@
         list:true,  //小切换按钮
         index:0,    //默认索引
         autoPlay:true,   //是否自动播放
-        delayTime:1000,     //每张页面停留时间
-        moveTime:1000    //图片切换的速度
+        delayTime:2000,     //每张页面停留时间
+        moveTime:2000    //图片切换的速度
     })
 
 })();
