@@ -6,7 +6,7 @@
             this.user = document.getElementById("user");
             this.psd = document.getElementById("pass");
             this.reg = document.getElementById("goReg");
-            this.login = document.getElementById("login-btn");  
+            this.login = document.getElementById("login-btn"); this.span = document.querySelector(".promptInfo");
             this.addEvent();
         }
         addEvent(){            
@@ -17,10 +17,10 @@
             }
             // 点击注册按钮跳转
             this.reg.onclick = function(){
-                console.log(this.reg)
-
                 location.href = "register.html";
             }
+
+            
         }
         getUserInfo(){
             this.info = getCookie("userInfo") ? JSON.parse(getCookie("userInfo")) : [];

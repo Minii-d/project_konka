@@ -1,96 +1,225 @@
 [{
-    "goodsId":1,
-    "img":"images/tv1.jpg",
+    "Id":0,
+    "name":"LED70U5 70吋巨屏4K超高清电视",
+    "description":"杜比数码环绕 双HDR画质补偿",
+    "price":"￥2999.00",
+    "oprice":"￥4300.00",
+    "tag":"tv",
+    "img":[
+        "images/tv1.jpg",
+        "images/tv-1-mini.jpg",
+        "images/tv-1-mini2.jpg",
+        "images/tv-1-mini3.jpg"
+    ],
+    "details":[
+        "images/details-1.jpg",
+        "images/details-2.gif",
+        "images/details-3.jpg"
+    ],
+    "guige":[
+        "images/guige-1.jpg"
+    ],
+    "comment":[
+        "images/pingjia-1.png",
+        "images/pingjia-1.png"
+    ],
+    "service":[
+        "shouhou1.jpg"
+    ]
+},{
+    "Id":1,
     "name":"LED70U5 70吋巨屏4K超高清电视",
     "description":"杜比数码环绕 双HDR画质补偿",
     "price":"￥3599.00",
     "oprice":"￥5000.00",
-    "tag":"tv"
+    "tag":"tv",
+    "img":[
+        "images/tv2.jpg",
+        "images/tv-1-mini.jpg",
+        "images/tv-1-mini2.jpg",
+        "images/tv-1-mini3.jpg"
+    ],
+    "details":[
+        "images/details-1.jpg",
+        "images/details-2.gif",
+        "images/details-3.jpg"
+    ],
+    "guige":[
+        "images/guige-1.jpg"
+    ],
+    "comment":[
+        "images/pingjia-1.png",
+        "images/pingjia-1.png"
+    ],
+    "service":[
+        "shouhou1.jpg"
+    ]
 },{
-    "goodsId":2,
-    "img":"images/tv2.jpg",
+    "Id":2,
     "name":"LED70U5 70吋巨屏4K超高清电视",
     "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥2000.00",
-    "oprice":"￥5000.00",
-    "tag":"tv"
+    "price":"￥2226.00",
+    "oprice":"￥4322.00",
+    "tag":"tv",
+    "img":[
+        "images/tv3.jpg",
+        "images/tv-1-mini.jpg",
+        "images/tv-1-mini2.jpg",
+        "images/tv-1-mini3.jpg"
+    ],
+    "details":[
+        "images/details-1.jpg",
+        "images/details-2.gif",
+        "images/details-3.jpg"
+    ],
+    "guige":[
+        "images/guige-1.jpg"
+    ],
+    "comment":[
+        "images/pingjia-1.png",
+        "images/pingjia-1.png"
+    ],
+    "service":[
+        "shouhou1.jpg"
+    ]
 },{
-    "goodsId":3,
-    "img":"images/tv3.jpg",
+    "Id":3,
     "name":"LED70U5 70吋巨屏4K超高清电视",
     "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00","oprice":"￥5000.00",
-    "tag":"tv"
+    "price":"￥2226.00",
+    "oprice":"￥4322.00",
+    "tag":"tv",
+    "img":[
+        "images/tv4.jpg",
+        "images/tv-1-mini.jpg",
+        "images/tv-1-mini2.jpg",
+        "images/tv-1-mini3.jpg"
+    ],
+    "details":[
+        "images/details-1.jpg",
+        "images/details-2.gif",
+        "images/details-3.jpg"
+    ],
+    "guige":[
+        "images/guige-1.jpg"
+    ],
+    "comment":[
+        "images/pingjia-1.png",
+        "images/pingjia-1.png"
+    ],
+    "service":[
+        "shouhou1.jpg"
+    ]
 },{
-    "goodsId":4,
-    "img":"images/tv4.jpg",
+    "Id":4,
+    "name":"401升 十字对开冰箱 BCD-401BX4S",
+    "description":"金色钢化玻璃面板，冷冻室6个独立存储抽屉",
+    "price":"￥2899.00",
+    "oprice":"￥4322.00",
+    "tag":"tv",
+    "img":[
+        "images/icebox1.jpg",
+        "images/icebox-min1.jpg",
+        "images/icebox-mini2.jpg",
+        "images/icebox-mini3.jpg"
+    ],
+    "details":[
+        "images/details-1.jpg",
+        "images/details-2.gif",
+        "images/details-3.jpg"
+    ],
+    "guige":[
+        "images/guige-1.jpg"
+    ],
+    "comment":[
+        "images/pingjia-1.png",
+        "images/pingjia-1.png"
+    ],
+    "service":[
+        "shouhou1.jpg"
+    ]
+},{
+    "Id":5,
+    "name":"401升 十字对开冰箱 BCD-401BX4S",
+    "description":"金色钢化玻璃面板",
+    "price":"￥2226.00",
+    "oprice":"￥4322.00",
+    "tag":"tv",
+    "img":[
+        "images/icebox2.jpg",
+        "images/icebox-min1.jpg",
+        "images/icebox-mini2.jpg",
+        "images/icebox-mini3.jpg"
+    ],
+    "details":[
+        "images/details-1.jpg",
+        "images/details-2.gif",
+        "images/details-3.jpg"
+    ],
+    "guige":[
+        "images/guige-1.jpg"
+    ],
+    "comment":[
+        "images/pingjia-1.png",
+        "images/pingjia-1.png"
+    ],
+    "service":[
+        "shouhou1.jpg"
+    ]
+},{
+    "Id":6,
     "name":"LED70U5 70吋巨屏4K超高清电视",
     "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00",
-    "oprice":"￥5000.00",
-    "tag":"tv"
+    "price":"￥2226.00",
+    "oprice":"￥4322.00",
+    "tag":"tv",
+    "img":[
+        "images/icebox3.jpg",
+        "images/icebox-min1.jpg",
+        "images/icebox-mini2.jpg",
+        "images/icebox-mini3.jpg"
+    ],
+    "details":[
+        "images/details-1.jpg",
+        "images/details-2.gif",
+        "images/details-3.jpg"
+    ],
+    "guige":[
+        "images/guige-1.jpg"
+    ],
+    "comment":[
+        "images/pingjia-1.png",
+        "images/pingjia-1.png"
+    ],
+    "service":[
+        "shouhou1.jpg"
+    ]
 },{
-    "goodsId":5,
-    "img":"images/icebox1.jpg",
+    "Id":7,
     "name":"LED70U5 70吋巨屏4K超高清电视",
     "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00",
-    "oprice":"￥5000.00",
-    "tag":"icebox"
-},{
-    "goodsId":6,
-    "img":"images/icebox2.jpg",
-    "name":"LED70U5 70吋巨屏4K超高清电视",
-    "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00",
-    "oprice":"￥5000.00",
-    "tag":"icebox"
-},{
-    "goodsId":7,
-    "img":"images//icebox3.jpg",
-    "name":"LED70U5 70吋巨屏4K超高清电视",
-    "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00",
-    "oprice":"￥5000.00",
-    "tag":"icebox"
-},{
-    "goodsId":8,
-    "img":"images/icebox4.jpg",
-    "name":"LED70U5 70吋巨屏4K超高清电视",
-    "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00",
-    "oprice":"￥5000.00",
-    "tag":"icebox"
-},{
-    "goodsId":9,
-    "img":"images/clearbox1.jpg",
-    "name":"LED70U5 70吋巨屏4K超高清电视",
-    "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00",
-    "oprice":"￥5000.00",
-    "tag":"clearbox"
-},{
-    "goodsId":10,
-    "img":"images/clearbox2.jpg",
-    "name":"LED70U5 70吋巨屏4K超高清电视",
-    "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00",
-    "oprice":"￥5000.00",
-    "tag":"clearbox"
-},{
-    "goodsId":10,
-    "img":"images/clearbox3.jpg",
-    "name":"LED70U5 70吋巨屏4K超高清电视",
-    "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00",
-    "oprice":"￥5000.00",
-    "tag":"clearbox"
-},{
-    "goodsId":10,
-    "img":"images//clearbox4.jpg",
-    "name":"LED70U5 70吋巨屏4K超高清电视",
-    "description":"杜比数码环绕 双HDR画质补偿",
-    "price":"￥3599.00",
-    "oprice":"￥5000.00",
-    "tag":"clearbox"
+    "price":"￥2226.00",
+    "oprice":"￥4322.00",
+    "tag":"tv",
+    "img":[
+        "images/icebox4.jpg",
+        "images/icebox-min1.jpg",
+        "images/icebox-mini2.jpg",
+        "images/icebox-mini3.jpg"
+    ],
+    "details":[
+        "images/details-1.jpg",
+        "images/details-2.gif",
+        "images/details-3.jpg"
+    ],
+    "guige":[
+        "images/guige-1.jpg"
+    ],
+    "comment":[
+        "images/pingjia-1.png",
+        "images/pingjia-1.png"
+    ],
+    "service":[
+        "shouhou1.jpg"
+    ]
 }]

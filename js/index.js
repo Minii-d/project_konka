@@ -1,6 +1,12 @@
 ;(function(){
     "use strict";
 
+
+
+
+
+
+
     class IndexGoods{
         constructor(){
             //商品数据接口
@@ -108,5 +114,46 @@
         }
     }
     new Menus();
+
+
+    
+    //楼层
+    
+    $("#sidebar").find("li").click(function(){
+        var i = $(this).index();
+        var t = $(".floor").eq(i).offset().top;
+        $("html").animate({
+            scrollTop:t
+        })
+    })
+
+    
+    onscroll = ()=>{
+        if($("html").scrollTop()>300){
+            $("#sidebar").fadeIn(500);
+        }
+        if($("html").scrollTop()<300){
+            $("#sidebar").fadeOut(500);
+        }
+    }
+
+
+
+    //轮播图
+    ;(function(){
+        "use strict";   
+        
+        $(".swiper").banner({
+            items:$(".swiper").find("a img"),
+            left:$(".swiper").find(".left"),
+            right:$(".swiper").find(".right"),
+            list:true,  //小切换按钮
+            index:0,    //默认索引
+            autoPlay:true,   //是否自动播放
+            delayTime:2000,     //每张页面停留时间
+            moveTime:2000    //图片切换的速度
+        })
+    
+    })();
 
 })();
