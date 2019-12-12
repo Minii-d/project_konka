@@ -19,7 +19,8 @@
                 // console.log(res);//拿到数据第一时间查看什么格式，再解析
                 that.res = JSON.parse(res);
                 // that.display();
-                that.displayTv();               
+                that.displayTv(); 
+                that.displayIcebox();              
 
             });
         }
@@ -38,11 +39,23 @@
             }
 
             this.tvGoods.innerHTML = str;
-            this.iceboxGoods.innerHTML = str;
+        }
+        displayIcebox(){
+            var type;            
+            var str = "";
+            for(var i=8;i<16;i++){
+                str += `<li>
+                            <a href="">
+                            <img src="${this.res[i].oneimg}" title="${this.res[i].name}">
+                            <h4>${this.res[i].name}</h4>
+                            <h5>${this.res[i].description}</h5>
+                            <p>${this.res[i].price}&nbsp;<span>&nbsp;${this.res[i].oprice}</span></p>
+                            </a>
+                        </li>`;  
         }  
-
+        this.iceboxGoods.innerHTML = str;
     }
-
+}
     new IndexGoods();
 
 
@@ -52,6 +65,7 @@
             this.url = "http://localhost/project_konka/data/goods.json";
             this.txt = document.querySelector(".header-search #search");
             this.list = document.querySelector(".header-search .list");
+            this.ali = document.querySelectorAll(".list li");
             this.sbtn = document.querySelector(".header-search .s-btn");
             this.addEvent();
         }
@@ -64,13 +78,21 @@
                 e.stopPropagation();
             }  
 
-            document.onclick = (eve) =>{
+            document.onclick = () =>{
                 this.list.style.display = "none";
             } 
 
+            for(let i=0;i<this.ali.length;i++){
+                this.ali[i].onclick = (eve)=>{
+                    let e = eve || window.event;
+                    this.txt.value = this.ali[i].innerHTML;
+
+                }
+            }
+
+
             // 跳转存cookie
             this.sbtn.onclick = ()=>{
-                // console.log(this);
                 this.val = this.txt.value;
                 this.setCookie();
                 location.href = "goodsList.html";
@@ -79,25 +101,6 @@
         setCookie(){
             setCookie("goodsSear",JSON.stringify(this.val));
         }
-
-        // load(){
-        //     var that = this;
-        //     ajaxGet(this.url,function(res){
-        //         that.res = res;                
-        //         // console.log(that.res);
-        //     });
-            
-        //     this.getMsg();
-        // }
-        // getMsg(){
-        //     console.log(this.res)
-        //     for(let i=0;i<this.res.length;i++){
-        //         console.log(this.res[i].name)
-        //     }
-            // this.res.includes(this.val);
-            
-        // }
-  
 
     }
 

@@ -75,10 +75,23 @@
         <!-- 购物车有商品时 -->
         <div class="main-container">
             <h3 class="title">购物车<span>Shopping Cart</span></h3>
+
+        <!-- 购物车为空时 -->
+        <div class="container-none clear">
+            <image src="images/shoppingNone.png" class="l"></image>
+            <div class="container-none-r l">
+                <h3>您的购物车还是空的！</h3>
+                <p>您的购物车当前并未选购任何商品。</p>
+                <a class="none-red" href="">马上去购物 »</a>
+            </div>
+        </div>
+
+
+
             <table>
                 <thead >
                     <tr>
-                        <th width="110" height="40"><input type="checkbox" name="" id="" class="checkbox">全选</th>
+                        <th width="110" height="40"><input type="checkbox" checked="checked" id="selectAll" class="checkbox">全选</th>
                         <th width="460">商品</th>
                         <th width="110">单价</th>
                         <th width="175">数量</th>
@@ -88,7 +101,7 @@
                 </thead>
                 <tbody >
                     <tr height="120">
-                        <td><input type="checkbox" name="" id="" class="checkbox"></td>
+                        <td><input type="checkbox" checked="checked" id="" class="checkbox"></td>
                         <td class="details" >
                             <a href="" class="img">
                                 <img src="images/tv-picture1.jpg">
@@ -97,14 +110,14 @@
                                 <h5><a href="">智能性价比之王套餐 4K电视+法式冰箱B50U</a></h5>
                                 <h6>XQG80-1203BD</h6>
                                 <p>2GB+16GB大内存  免遥控全景AI  远场语音智能</p>
-                                <!-- <p class="gif"><img src="images/e5ff5a2445ad24dcb185e4abcdad7f362a3adc19.jpg" alt="">【赠品】抽奖赢最高价值5000春节机票飞机票 x 1</p>  -->
+                                
                             </div>
                         </td>
                         <td class="unit-price">2799.00</td>
                         <td class="change-number">
                             <div class="box">
                                 <b>-</b>
-                                <input type="number" id="one" value="1">
+                                <input type="number" id="one" value="1" min="1">
                                 <b>+</b>
                             </div>
                         </td>
@@ -114,7 +127,7 @@
                 </tbody>
                 <tfoot align="center">
                     <tr height="74">
-                        <td><input type="checkbox" name="" id="" class="checkbox">全选</td>
+                        <td><input type="checkbox" checked="checked" id="" class="checkbox">全选</td>
                         <td colspan="1" class="delete-all"><span>删除选中</span></td>
                         <td colspan="3" class="finally">
                             <p>已选择<span>1</span>件商品,优惠后金额&nbsp;:&nbsp;<em>2799.00</em></p>       
@@ -126,15 +139,7 @@
 
         </div>
         
-        <!-- 购物车为空时 -->
-        <!-- <div class="container-none clear">
-            <image src="images/shoppingNone.png" class="l"></image>
-            <div class="container-none-r l">
-                <h3>您的购物车还是空的！</h3>
-                <p>您的购物车当前并未选购任何商品。</p>
-                <a class="none-red" href="">马上去购物 »</a>
-            </div>
-        </div> -->
+
 
 
     </div>

@@ -55,8 +55,8 @@
         }
         move(e){
 //				计算span要移动的left和top
-            var l = e.clientX - this.sBox.offsetLeft - this.sSpan.offsetWidth/2;
-            var t = e.clientY - this.sBox.offsetTop - this.sSpan.offsetHeight/2;
+            var l = e.pageX - this.sBox.offsetLeft - this.sSpan.offsetWidth/2;
+            var t = e.pageY - this.sBox.offsetTop - this.sSpan.offsetHeight/2;
 //				span的边界限定
             if(l<0) l=0;
             if(t<0) t=0;

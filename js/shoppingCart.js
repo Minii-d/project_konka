@@ -5,16 +5,25 @@
         constructor(){
             this.url ="http://localhost/project_konka/data/goods.json";
             this.tbody = document.querySelector("tbody");
+            this.tfoot = document.querySelector("tfoot");
+            this.deleteAll = document.querySelector(".delete-all");
+            this.selectAllt = document.querySelector("#selectAll");
+            this.selectAllb = document.querySelector("tfoot .checkbox");
+            console.log( this.selectAllb);
+            // 商品总数
             this.sumNum = document.querySelector(".finally span");
+            // 商品总价
             this.sumPrice = document.querySelector(".finally em");
             this.amountBtn = document.querySelector(".amount");
-
+            // 单个商品总数
             this.oneNum = document.querySelector(".change-number #one");
 
+            this.ajaxLoad();
+            this.addEvent();
             
             // console.log(this.sumNum);
-            this.ajaxLoad();
             // console.log(this.sumPrice);
+            // console.log(this.oneNum);
 
         }
 
@@ -30,10 +39,10 @@
             this.goodsMsg = getCookie("goodsCookie") ? JSON.parse(getCookie("goodsCookie")) : [];
             
             this.display();
+
         }
 
         display(){
-        //    console.log(this.goodsMsg);
             let str = "";
             let sum = 0;
             let oneSum = 0;
@@ -49,7 +58,7 @@
                         // console.log(sum);
                       
                         str +=`<tr index="${this.goodsMsg[i].id}"  align="center">
-                                    <td><input type="checkbox"></td class="checkbox">
+                                    <td><input type="checkbox" checked="checked"></td >
                                     <td class="details">
                                         <a href="" class="img">
                                             <img src="${this.res[j].oneimg}"/>
@@ -62,9 +71,8 @@
                                     </td>
                                     <td class="unit-price">${this.res[j].price}</td>
                                     <td class="change-number">
-                                        <div class="box">
-                                            
-                                            <input type="number" id="" value="1">
+                                        <div class="box"> 
+                                            <input type="number" id="" value="1" min="1" id="one">
                                             
                                         </div>
                                     </td>
@@ -76,10 +84,8 @@
             }            
             this.tbody.innerHTML = str; 
             this.sumPrice.innerHTML = "￥" +  sum.toFixed(2);
-            this.sumNum.innerHTML = this.total;
             this.sumNum.innerHTML = oneSum;
 
-            this.addEvent();
         }
         addEvent(){
             var that = this;
@@ -92,8 +98,30 @@
                     that.changeCookie();                    
                 }
             })
+
+            this.deleteAll.addEventListener("click",()=>{
+                this.tbody.innerHTML="";
+                this.selectAllt.checked = false;
+                this.selectAllb.checked = false;
+                this.removeCookie();
+            })
+        
+            // console.log(this.one)
+            this.oneNum.addEventListener("oninput",function(){
+                console.log(1)
+            })
+            
         }
+
+        // deleteAll(){
+        //     this.tbody.innerHTML="";
+        //     this.selectAllt.checked = false;
+        //     this.selectAllb.checked = false;
+        //     this.removeCookie();
+        // }
+
         changeCookie(){
+            console.log(this.goodsMsg)
             for(var i=0;i<this.goodsMsg.length;i++){
                 // 判断点击的id和cookie的id是否一致
                 this.id = this.goodsMsg[i].id;
@@ -101,6 +129,11 @@
                 break;
             }
             setCookie("goodsCookie",JSON.stringify(this.goodsMsg));
+        }
+        removeCookie(){
+            removeCookie("goodsCookie",{
+                expires:-1
+            });
         }
     }
     

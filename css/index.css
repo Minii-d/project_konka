@@ -39,7 +39,7 @@ header .margin .header-nav a:hover {
   margin: auto;
   display: block;
   width: 200px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
   font-size: 68px;
   color: #dedede;
   line-height: 500px;

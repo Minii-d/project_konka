@@ -11,12 +11,12 @@
             this.btnBuy = document.getElementById("btn-buy");
             this.btnAdd = document.getElementById("btn-buy");
             this.getCookie();
-            this.addEvent();
+            // this.addEvent();
         }
         getCookie(){
-            this.info = JSON.parse(getCookie("goodsInfo"));
-            // console.log(this.info);
+            this.info = getCookie("goodsInfo") ? JSON.parse(getCookie("goodsInfo")) : {};
             this.display();
+ 
         }
         display(){
             let str = "";
@@ -30,7 +30,10 @@
                 <a href="">${this.info.classify}</a>
                 <i>&gt;</i>
                 <span>${this.info.name}</span>
-            `;                           
+            `;          
+            //没有数据时        
+            // if(!this.info.length) return; 
+
             for(let i=0;i<this.info.img.length;i++){
                 str1 += `<li>
                             <img src="${this.info.img[i]}">
@@ -54,25 +57,27 @@
                         <b>${this.info.price}</b><span>&nbsp;${this.info.oprice}</span>
                         <a href=""><i></i><img src="images/qrcode.png" alt=""> 手机购买</a>
                     </div>
-                    `;            
+                    `;     
+                    
             this.headBox.innerHTML = str;
             this.smallImg.innerHTML = str1;
             this.imgBox.innerHTML = str2;
-            this.contBox.innerHTML =str3;            
+            this.contBox.innerHTML =str3;  
         }
+
+
 
         addEvent(){
             this.btnBuy.onclick = ()=>{
-                // location.href = "shoppingCart.html";
+                location.href = "shoppingCart.html";
             }
             this.btnAdd.onclick = ()=>{
-                that.setCookie();
+                this.setCookie();
             }
         }
-
         setCookie(){
             this.goodsMsg = getCookie("goodsCookie") ? JSON.parse(getCookie("goodsCookie")) : [] ;
-            // console.log(this.goodsMsg);
+            console.log(this.goodsMsg);
 
             if(this.goodsMsg.length<1){
                 console.log(this.goodsId)
@@ -97,6 +102,7 @@
             setCookie("goodsCookie",JSON.stringify(this.goodsMsg));
 
         }
+ 
     }
 
     new Details();
@@ -145,7 +151,7 @@
     clearInterval(t);
     var t = setInterval(()=>{
         new Timer({
-            date1:"2019/12/12 11:59:59"            
+            date1:"2019/12/12 23:59:59"            
         });
     },1000);
 
@@ -181,7 +187,6 @@
             <img src="${this.img[i]}">
             `;
             this.oli.innerHTML = str;
-            console.log(this.img[i])
 
         }
     }

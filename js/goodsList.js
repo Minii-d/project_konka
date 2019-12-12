@@ -6,6 +6,7 @@
             this.url = "http://localhost/project_konka/data/goods.json";
             this.goodsBox = document.querySelector(".goods-list ul");
             this.load();
+            this.getCookie();
             this.addEvent();
 
         }
@@ -15,25 +16,43 @@
             ajaxGet(this.url,function(res){
                 that.res = JSON.parse(res);                
                 // console.log(that.res);
+                that.getMsg();
                 that.display();
             });
         }
+        getCookie(){
+            this.goodsS = JSON.parse(getCookie("goodsSear"));
+        }
         
+        getMsg(){
+            // console.log(this.res);
+            this.goodsArr = [];
+            for(let i=0;i<this.res.length;i++){
+                if(this.res[i].name.includes(this.goodsS)){
+                    this.goodsArr.push(this.res[i]);
+                    
+                }
+            }
+            // console.log(this.goodsArr)
+            
+        }
+
         display(){
             let str = "";
-            for(let i=0;i<this.res.length;i++){
+            for(let i=0;i<this.goodsArr.length;i++){
                 str += `
                 <li>
-                    <a class="abox" index="${this.res[i].Id}">
-                            <img src="${this.res[i].oneimg}" title="${this.res[i].name}" index="${this.res[i].Id}">
-                            <h4>${this.res[i].name}</h4>
-                            <h5>${this.res[i].description}</h5>
-                            <p>${this.res[i].price}</p>
+                    <a class="abox" index="${this.goodsArr[i].Id}">
+                            <img src="${this.goodsArr[i].oneimg}" title="${this.goodsArr[i].name}" index="${this.goodsArr[i].Id}">
+                            <h4>${this.goodsArr[i].name}</h4>
+                            <h5>${this.goodsArr[i].description}</h5>
+                            <p>${this.goodsArr[i].price}</p>
                             <em class="addCar">加入购物车</em>
                         </a>
                     </li>
                     `
             }
+            
             this.goodsBox.innerHTML = str;
         }
 

@@ -116,11 +116,12 @@ body {
   font-size: 12px;
   color: #777;
   line-height: 36px;
-  cursor: pointer;
+
 }
 
 #main .main-container table tfoot .delete-all span:hover {
   color: #000;
+  cursor: pointer;
 }
 
 #main .main-container table tfoot .finally em {

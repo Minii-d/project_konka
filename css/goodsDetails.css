@@ -80,10 +80,11 @@ body {
   width: 529px;
   height: 529px;
   position: absolute;
-  left: 500px;
-  top: 100px;
+  left: 700px;
+  top: 130px;
   overflow: hidden;
   display: none;
+  z-index: 2;
 }
 
 #main .main-cont .bigger .imgBox .bBox img {
