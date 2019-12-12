@@ -64,7 +64,8 @@
     "description":"杜比数码环绕 双HDR画质补偿",
     "price":"￥2226.00",
     "oprice":"￥4322.00",
-    "tag":"宽屏电视",
+    "tag":"电视",
+    "classify":"宽屏电视",
     "oneimg":"images/tv3.jpg",
     "img":[
         "images/tv3.jpg",
@@ -94,7 +95,7 @@
     "price":"￥2226.00",
     "oprice":"￥4322.00",
     "tag":"电视",
-    "tag":"液晶电视",
+    "classify":"液晶电视",
     "oneimg":"images/tv4.jpg",
     "img":[
         "images/tv4.jpg",

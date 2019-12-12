@@ -76,7 +76,7 @@
         <div class="main-container">
             <h3 class="title">购物车<span>Shopping Cart</span></h3>
             <table>
-                <thead align="left">
+                <thead >
                     <tr>
                         <th width="110" height="40"><input type="checkbox" name="" id="" class="checkbox">全选</th>
                         <th width="460">商品</th>
@@ -104,7 +104,7 @@
                         <td class="change-number">
                             <div class="box">
                                 <b>-</b>
-                                <input type="number" id="" value="1">
+                                <input type="number" id="one" value="1">
                                 <b>+</b>
                             </div>
                         </td>
@@ -112,28 +112,29 @@
                         <td class="delete">删除</td>
                     </tr>
                 </tbody>
-                <tfoot>
+                <tfoot align="center">
                     <tr height="74">
                         <td><input type="checkbox" name="" id="" class="checkbox">全选</td>
-                        <td colspan="2" class="delete-all"><span>删除选中</span></td>
-                        <td colspan="2" class="finally">
-                            <p>已选择<span>1</span>件商品,优惠后金额&nbsp;:&nbsp;<em>2799.00</em></p>                           
+                        <td colspan="1" class="delete-all"><span>删除选中</span></td>
+                        <td colspan="3" class="finally">
+                            <p>已选择<span>1</span>件商品,优惠后金额&nbsp;:&nbsp;<em>2799.00</em></p>       
                         </td>
                         <td><div class="amount">去结算</div></td>
                     </tr>
                 </tfoot>
             </table>
+
         </div>
         
         <!-- 购物车为空时 -->
-        <div class="container-none clear">
+        <!-- <div class="container-none clear">
             <image src="images/shoppingNone.png" class="l"></image>
             <div class="container-none-r l">
                 <h3>您的购物车还是空的！</h3>
                 <p>您的购物车当前并未选购任何商品。</p>
                 <a class="none-red" href="">马上去购物 »</a>
             </div>
-        </div>
+        </div> -->
 
 
     </div>
@@ -278,4 +279,7 @@
     </section>
     
 </body>
+<script src="libs/ajax.js"></script>
+<script src="libs/cookie.js"></script>
+<script src="js/shoppingCart.js"></script>
 </html>
