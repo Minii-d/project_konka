@@ -240,10 +240,12 @@ body {
 #main .main-cont .main-cont-r .bottons #btn-buy {
   background: #ed1c24;
   margin-right: 24px;
+  cursor: pointer;
 }
 
 #main .main-cont .main-cont-r .bottons #btn-add {
   background: #ff9f00;
+  cursor: pointer;
 }
 
 #main .main-details {

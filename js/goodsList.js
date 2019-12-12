@@ -25,7 +25,7 @@
                 str += `
                 <li>
                     <a class="abox" index="${this.res[i].Id}">
-                            <img src="${this.res[i].oneimg}" title="${this.res[i].name}">
+                            <img src="${this.res[i].oneimg}" title="${this.res[i].name}" index="${this.res[i].Id}">
                             <h4>${this.res[i].name}</h4>
                             <h5>${this.res[i].description}</h5>
                             <p>${this.res[i].price}</p>
@@ -44,16 +44,22 @@
                 let target = e.target || e.srcElement;
                 if(target.className == "addCar"){
                     that.goodsId = target.parentNode.getAttribute("index");
-                    console.log(that.goodsId);
                     that.setCookie();
                 }
-            });
+
+                console.log(target.tagName)
+                if(target.tagName == "IMG"){
+                    that.index = target.parentNode.getAttribute("index");
+                    that.setCookie2();
+                    location.href = "goodsDetails.html";
+                }
+            });            
             
         }
 
         setCookie(){
             this.goodsMsg = getCookie("goodsCookie") ? JSON.parse(getCookie("goodsCookie")) : [] ;
-            console.log(this.goodsMsg);
+            // console.log(this.goodsMsg);
 
             if(this.goodsMsg.length<1){
                 console.log(this.goodsId)
@@ -70,7 +76,7 @@
                     this.goodsMsg[this.i].num++;                
                 }else{
                     this.goodsMsg.push({
-                        id:this.Id,
+                        id:this.goodsId,
                         num:1
                     });
                 }
@@ -78,18 +84,18 @@
             setCookie("goodsCookie",JSON.stringify(this.goodsMsg));
 
         }
+
+        // 保存当前点击的信息
+        setCookie2(){
+            for(let i=0;i<this.res.length;i++){
+                if(this.index == this.res[i].Id){
+                    setCookie("goodsInfo",JSON.stringify(this.res[i]));
+                    console.log(this.res[i]); 
+                }
+            }
+        }
     }
 
-
-
-
-
-        // getCookie(){
-        //     this.msg = JSON.parse(getCookie("goodsSear"));
-        //     console.log(this.msg);
-
-        // }
-    // }
 
     new GoodsList();
     

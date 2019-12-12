@@ -4,7 +4,8 @@
     "description":"杜比数码环绕 双HDR画质补偿",
     "price":"￥2999.00",
     "oprice":"￥4300.00",
-    "tag":"tv",
+    "tag":"电视",
+    "classify":"LED电视",
     "oneimg":"images/tv1.jpg",
     "img":[
         "images/tv1.jpg",
@@ -33,7 +34,8 @@
     "description":"杜比数码环绕 双HDR画质补偿",
     "price":"￥3599.00",
     "oprice":"￥5000.00",
-    "tag":"tv",
+    "tag":"电视",
+    "classify":"宽屏电视",
     "oneimg":"images/tv2.jpg",
     "img":[
         "images/tv2.jpg",
@@ -62,7 +64,7 @@
     "description":"杜比数码环绕 双HDR画质补偿",
     "price":"￥2226.00",
     "oprice":"￥4322.00",
-    "tag":"tv",
+    "tag":"宽屏电视",
     "oneimg":"images/tv3.jpg",
     "img":[
         "images/tv3.jpg",
@@ -91,7 +93,8 @@
     "description":"杜比数码环绕 双HDR画质补偿",
     "price":"￥2226.00",
     "oprice":"￥4322.00",
-    "tag":"tv",
+    "tag":"电视",
+    "tag":"液晶电视",
     "oneimg":"images/tv4.jpg",
     "img":[
         "images/tv4.jpg",
@@ -120,7 +123,8 @@
     "description":"金色钢化玻璃面板，冷冻室6个独立存储抽屉",
     "price":"￥2899.00",
     "oprice":"￥4322.00",
-    "tag":"icebox",
+    "tag":"冰箱",
+    "classify":"双开门冰箱",
     "oneimg":"images/icebox1.jpg",
     "img":[
         "images/icebox1.jpg",
@@ -150,6 +154,7 @@
     "price":"￥2226.00",
     "oprice":"￥4322.00",
     "tag":"icebox",
+    "classify":"直冷冰箱",
     "oneimg":"images/icebox2.jpg",
     "img":[
         "images/icebox2.jpg",
@@ -178,7 +183,8 @@
     "description":"杜比数码环绕 双HDR画质补偿",
     "price":"￥2226.00",
     "oprice":"￥4322.00",
-    "tag":"icebox",
+    "tag":"冰箱",
+    "classify":"十字门门冰箱",
     "oneimg":"images/icebox3.jpg",
     "img":[
         "images/icebox3.jpg",
@@ -207,7 +213,8 @@
     "description":"杜比数码环绕 双HDR画质补偿",
     "price":"￥2226.00",
     "oprice":"￥4322.00",
-    "tag":"icebox",
+    "tag":"冰箱",
+    "classify":"双开门冰箱",
     "oneimg":"images/icebox4.jpg",
     "img":[
         "images/icebox4.jpg",

@@ -25,17 +25,8 @@
         }
         displayTv(){
             var type;            
-            let goodsArr = [];
-            var arr1 = [];
-            var arr2 = [];
             var str = "";
-            for(var i=0;i<this.res.length;i++){
-                // if("tv" == this.res[j].tag){
-                //     console.log(this.res[j].tag)
-                //     arr1.push(this.res[j]);
-                //     goodsArr = arr1;
-                // }
-                // console.log(this.res[i].oneimg)
+            for(var i=0;i<8;i++){
                 str += `<li>
                             <a href="">
                             <img src="${this.res[i].oneimg}" title="${this.res[i].name}">
@@ -64,13 +55,9 @@
             this.sbtn = document.querySelector(".header-search .s-btn");
             this.addEvent();
         }
-        addEvent(){
-            // this.txt.oninput = ()=>{
-            //     this.val = this.txt.value;
-            //     // this.load();
-            //     this.setCookie();
-            // }
 
+        addEvent(){
+            // 下拉菜单
             this.txt.onclick = (eve) =>{
                 this.list.style.display = "block";
                 let e = eve || window.event;
@@ -81,6 +68,7 @@
                 this.list.style.display = "none";
             } 
 
+            // 跳转存cookie
             this.sbtn.onclick = ()=>{
                 // console.log(this);
                 this.val = this.txt.value;
