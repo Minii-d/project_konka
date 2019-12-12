@@ -130,7 +130,7 @@
                         return val.user == this.u;
                     });
                     if(type){
-                        this.span.innerHTML = "昵称重复了";
+                        this.span.innerHTML = "用户名重复了";
                     }else{
                         this.info.push({
                             user:this.u,
@@ -144,10 +144,11 @@
         }
         // 注册成功，成功跳转的功能
         success(){
-            this.span.innerHTML = "注册成功，5秒后<a href=''>跳转</a>"
-            setTimeout(() => {
-                // location.href = "index.html";
-            }, 5000);
+            location.href = "login.html";
+            // this.span.innerHTML = "注册成功，5秒后<a href=''>跳转</a>"
+            // setTimeout(() => {
+            //     location.href = "index.html";
+            // }, 5000);
         }
     }
     new Register();

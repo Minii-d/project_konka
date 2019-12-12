@@ -11,7 +11,7 @@
             this.btnBuy = document.getElementById("btn-buy");
             this.btnAdd = document.getElementById("btn-buy");
             this.getCookie();
-            // this.addEvent();
+            this.addEvent();
         }
         getCookie(){
             this.info = getCookie("goodsInfo") ? JSON.parse(getCookie("goodsInfo")) : {};
@@ -68,8 +68,8 @@
 
 
         addEvent(){
-            this.btnBuy.onclick = ()=>{
-                location.href = "shoppingCart.html";
+            this.btnBuy.parentNode.onclick = function(){
+                window.location.href = "shoppingCart.html";
             }
             this.btnAdd.onclick = ()=>{
                 this.setCookie();
@@ -77,10 +77,9 @@
         }
         setCookie(){
             this.goodsMsg = getCookie("goodsCookie") ? JSON.parse(getCookie("goodsCookie")) : [] ;
-            console.log(this.goodsMsg);
+            // console.log(this.goodsMsg);
 
             if(this.goodsMsg.length<1){
-                console.log(this.goodsId)
                 this.goodsMsg.push({
                     id:this.goodsId,
                     num:1
